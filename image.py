@@ -13,12 +13,12 @@ def set_pixels(img, rgb_arr):
       pixels[col, row] = (rgb_arr[counter], rgb_arr[counter + 1], rgb_arr[counter + 2])
       counter = counter + 3
 
-def create_random_image():
+def create_random_image(file_name):
   width = 10 #128
   height = 10
   rgb_arr = request_to_random(width * height * 3, 0, 255)
   img = create_image(width, height)
   set_pixels(img, rgb_arr)
   img.show()
-  img.save('randomImg.bmp', 'BMP')
+  img.save(file_name, 'BMP')
 
