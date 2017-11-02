@@ -1,4 +1,5 @@
 from PIL import Image
+
 from requester import request_to_random
 
 def create_image(width, height):
