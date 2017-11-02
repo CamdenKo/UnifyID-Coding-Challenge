@@ -20,5 +20,5 @@ def create_random_image():
   img = create_image(width, height)
   set_pixels(img, rgb_arr)
   img.show()
-  img.save('randomImg', 'PNG')
+  img.save('randomImg.bmp', 'BMP')
 
