@@ -31,7 +31,7 @@ def save_wav(sounds_arr, wav_file, sample_rate, sound_length):
   wav_file.close()
 
 def create_random_wav(file_name):
-  """takes in a file_name and will save the random wav file to the file name"""
+  """takes in a file_name(string) and will save the random wav file to the file name"""
   sample_rate = 44100.0
   sound_length = 50
   duration = 3000 #MS
