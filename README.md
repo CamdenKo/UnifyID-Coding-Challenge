@@ -6,8 +6,8 @@ Camden Ko's submission for UnifyID Coding Challenge
     - PIL (Pillow)
      - struct
      - jsonrpcclient
- - in secrets.py set `randomAPI = 'YOUR_RANDOM.ORG_API_KEY'
- - run `python` on `main.py`
+ - in secrets.py set ```randomAPI = 'YOUR_RANDOM.ORG_API_KEY'```
+ - run ```python``` on ```main.py```
 
 ## Outputs
   - audioWAV.wav => the 3s random WAV file
