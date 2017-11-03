@@ -27,7 +27,7 @@ def save_wav(sounds_arr, wav_file, sample_rate, sound_length):
 
 def create_random_wav(file_name):
   sample_rate = 44100.0
-  sound_length = 10
+  sound_length = 50
   duration = 3000 #MS
   sounds_arr = create_sounds_arr(sample_rate, duration, sound_length)
   wav_file = create_wav_file(file_name)
