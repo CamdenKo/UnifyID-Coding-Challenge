@@ -5,9 +5,8 @@ from requester import request_to_random
 def create_image(width, height):
   return Image.new('RGB', (width, height), 'black')
 
-def set_pixels(img, rgb_arr):
+def set_pixels(img, rgb_arr, cluster_size):
   pixels = img.load()
-  cluster_size = 4
   counter = 0
   col = 0
   row = 0
@@ -31,11 +30,12 @@ def set_cluster(vals, pixels, min_x, max_x, min_y, max_y):
     x += 1
 
 def create_random_image(file_name):
-  width = 8
-  height = 8
-  rgb_arr = request_to_random(width * height * 3, 0, 255)
+  width = 128
+  height = 128
+  cluster_size = 8
+  rgb_arr = request_to_random((width * height * 3) / cluster_size, 0, 255)
   img = create_image(width, height)
-  set_pixels(img, rgb_arr)
+  set_pixels(img, rgb_arr, cluster_size)
   img.show()
   img.save(file_name, 'BMP')
 
