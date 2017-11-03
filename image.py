@@ -14,8 +14,8 @@ def set_pixels(img, rgb_arr):
       counter = counter + 3
 
 def create_random_image(file_name):
-  width = 10 #128
-  height = 10
+  width = 128
+  height = 128
   rgb_arr = request_to_random(width * height * 3, 0, 255)
   img = create_image(width, height)
   set_pixels(img, rgb_arr)
